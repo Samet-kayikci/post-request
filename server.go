@@ -13,7 +13,7 @@ type Text struct {
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != "POST" {
-		log.Println("data not post", r.Method)
+		log.Println("data not post\nr.Method:", r.Method)
 		return
 	}
 	var data Text
